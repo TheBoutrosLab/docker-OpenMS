@@ -31,8 +31,6 @@ jobs:
       packages: write
     steps:
       - uses: TheBoutrosLab/tool-Docker-action@v2
-        with:
-          # OpenMS 2.6.0 is not available for linux/arm64 in Bioconda.
-          platforms: linux/amd64
       # Uncomment if you expect to use non-SemVer release tags
-      #     non-semver-tags: true
+      # with:
+      #   non-semver-tags: true

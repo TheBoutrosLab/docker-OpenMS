@@ -6,7 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [3.5.0] - 2026-10-08
+
+### Changed
+
+- Update OpenMS from 2.6.0 to 3.5.0.
+- Restore multi-architecture publishing now that Bioconda provides OpenMS
+  3.5.0 for both `linux/amd64` and `linux/arm64`.
+
+## [2.6.0] - 2026-10-08
 
 ### Added
 
