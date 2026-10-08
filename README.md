@@ -1,54 +1,55 @@
-# docker-tool_name
-Template Repository for the Boutros Lab Dockerfiles based on mambaforge base image.
+# docker-OpenMS
 
-The base image is pulled from https://hub.docker.com/r/condaforge/mambaforge
+Docker image for [OpenMS](https://www.openms.de/), an open-source platform for
+LC-MS data management and analysis.
 
-# Documentation
-Docker introduction [here](https://uclahs-cds.atlassian.net/wiki/spaces/BOUTROSLAB/pages/3190419/Docker+Introduction)
+This image is maintained by the Boutros Lab and installs the OpenMS command-line
+tools in a dedicated Miniforge/Conda environment on an Ubuntu runtime image. It
+intentionally installs the Bioconda `openms` package without the optional
+`openms-thirdparty` tool collection.
 
-Dockerfile Best Practices [here](https://uclahs-cds.atlassian.net/wiki/spaces/BOUTROSLAB/pages/3189770/Dockerfile+Best+Practices)
+## Version
 
-Docker image versioning standard [here](https://uclahs-cds.atlassian.net/wiki/spaces/BOUTROSLAB/pages/3188472/Docker+image+versioning+standardization)
-
-
-# Version
-| Tool | Version |
-|------|---------|
-|tool_name| X.X.X|
-|tool_name_2|X.X.X|
+| Component | Version |
+|-----------|---------|
+| OpenMS | 2.6.0 |
+| Miniforge | 26.1.1-2 |
+| Ubuntu | 24.04 |
 
 ---
 
 ## Discussions
 
-- [Issue tracker](<link-to-issues-page>) to report errors and enhancement ideas.
-- Discussions can take place in [docker-<tool> Discussions](<link-to-discussions>)
-- [docker-<tool> pull requests](<link-to-pull-requests>) are also open for discussion
-
----
+- [Issue tracker](https://github.com/TheBoutrosLab/docker-OpenMS/issues) to report errors and enhancement ideas.
+- Discussions can take place in [docker-OpenMS Discussions](https://github.com/TheBoutrosLab/docker-OpenMS/discussions).
+- [docker-OpenMS pull requests](https://github.com/TheBoutrosLab/docker-OpenMS/pulls) are also open for discussion.
 
 ## Contributors
 
-Please see list of [Contributors](<link-to-contributors-insights>) at GitHub.
-
----
+Please see the list of [Contributors](https://github.com/TheBoutrosLab/docker-OpenMS/graphs/contributors) at GitHub.
 
 ## References
 
-1. Tool specific references can be listed here
-
----
+1. Röst HL, Sachsenberg T, Aiche S, et al. OpenMS: a flexible open-source software platform for mass spectrometry data analysis. *Nature Methods*. 2016;13:741-748. doi: [10.1038/nmeth.3959](https://doi.org/10.1038/nmeth.3959)
+2. OpenMS project documentation: <https://openms.readthedocs.io/>
 
 ## License
 
-Author: Name1, Name2
+Author: Chenghao Zhu
 
-[docker repo name] is licensed under the GNU General Public License version 2. See the file LICENSE for the terms of the GNU GPL license.
+docker-OpenMS is licensed under the GNU General Public License version 2. See
+the file [LICENSE](LICENSE) for the terms of the GNU GPL license.
 
-<one line to give the program's name and a brief idea of what it does.>
+docker-OpenMS provides a containerized OpenMS runtime for LC-MS data analysis.
 
-Copyright (C) 2026 Sanford Burnham Prebys Medical Discovery Institute ("Boutros Lab")
+Copyright (C) 2026 Sanford Burnham Prebys Medical Discovery Institute
+("Boutros Lab") All rights reserved.
 
-This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 2 of the License, or (at your option) any later
+version.
 
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
