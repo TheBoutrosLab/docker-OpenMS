@@ -12,7 +12,7 @@ intentionally installs the Bioconda `openms` package without the optional
 
 | Component | Version |
 |-----------|---------|
-| OpenMS | 2.6.0 |
+| OpenMS | 3.5.0 |
 | Miniforge | 26.1.1-2 |
 | Ubuntu | 24.04 |
 
